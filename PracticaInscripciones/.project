@@ -3,6 +3,7 @@
 	<name>PracticaInscripciones</name>
 	<comment></comment>
 	<projects>
+		<project>Inscripciones</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

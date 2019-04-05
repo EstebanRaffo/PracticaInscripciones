@@ -20,7 +20,7 @@
 	        int legajo = Integer.parseInt(request.getParameter("legajo"));
 	        Alumno unAlumno = ControladorNegocio.getInstancia().buscarAlumno(legajo);
 		%>
-		<form action="Controlador?action=saveInscription">
+		<form action="MiServlet?action=saveInscription" method="post">
 			<br>Legajo<br> 
 			<input name="legajo" type="text" value=<%=unAlumno.getNombre()%>>
 			<br>Alumno:<br>

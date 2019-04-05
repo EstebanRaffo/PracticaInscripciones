@@ -10,7 +10,7 @@
 		<title>Alta de Curso</title>
 	</head>
 	<body>
-		<form action="Controlador?action=saveCurso">
+		<form action="MiServlet?action=saveCurso" method="post">
 			<br>Código de Materia<br>
 			<input type="text" name="codigo">
 			<br>Legajo del Profesor<br>

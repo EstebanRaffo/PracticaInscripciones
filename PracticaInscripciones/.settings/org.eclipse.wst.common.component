@@ -2,6 +2,9 @@
     <wb-module deploy-name="PracticaInscripciones">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="Inscripciones.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Inscripciones/Inscripciones">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="java-output-path" value="/PracticaInscripciones/build/classes"/>
         <property name="context-root" value="PracticaInscripciones"/>
     </wb-module>

@@ -55,7 +55,7 @@
 			</tr>
 			<tr>
 				<td colspan="2">
-				   <a href="Controlador?action=displayAlumno&legajo=<%=unAlumno.getLegajo()%>">Ver Alumno</a>
+				   <a href="MiServlet?action=displayAlumno&legajo=<%=unAlumno.getLegajo()%>">Ver Alumno</a>
 				</td>
 				<% } %>
 			</tr>

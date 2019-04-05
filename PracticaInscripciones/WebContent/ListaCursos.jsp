@@ -42,7 +42,7 @@
 		%>
 			<tr>
 				<td>
-					<a href="Controlador?action=displayCurso&numero=<%=numero%>"><%=numero%></a>
+					<a href="MiServlet?action=displayCurso&numero=<%=numero%>"><%=numero%></a>
 				</td>
 				<td><%=unCurso.getMateria()%></td>
 				<td><%=unCurso.getProfesor()%></td>

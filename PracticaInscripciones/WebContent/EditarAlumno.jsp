@@ -32,7 +32,7 @@
 				</tr>
 				<tr>
 				<td colspan="2">
-				   <a href="Controlador?action=modificarAlumno">Editar Alumno</a>
+				   <a href="MiServlet?action=modificarAlumno">Editar Alumno</a>
 				</td>
 				
 				</tr>

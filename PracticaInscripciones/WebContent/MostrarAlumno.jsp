@@ -43,12 +43,12 @@
 			</tr>
 			<tr>
 				<td colspan="2">
-				   <a href="Controlador?action=editAlumno&legajo=<%=unAlumno.getLegajo()%>">Editar Alumno</a>
+				   <a href="MiServlet?action=editAlumno&legajo=<%=unAlumno.getLegajo()%>">Editar Alumno</a>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<a href="Controlador?action=enroll&legajo=<%=unAlumno.getLegajo()%>">Inscribir</a>
+					<a href="MiServlet?action=enroll&legajo=<%=unAlumno.getLegajo()%>">Inscribir</a>
 				</td>
 			</tr>
 		</table>

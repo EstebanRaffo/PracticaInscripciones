@@ -35,7 +35,7 @@
 		%>
 			<tr>
 				<td>
-					<a href="Controlador?action=displayAlumno&legajo=<%=legajo%>"><%=legajo%></a>
+					<a href="MiServlet?action=displayAlumno&legajo=<%=legajo%>"><%=legajo%></a>
 				</td>
 		
 				<td><%=unAlumno.getNombre()%></td>

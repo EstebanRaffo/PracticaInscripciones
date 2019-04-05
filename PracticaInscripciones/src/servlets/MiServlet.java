@@ -20,7 +20,7 @@ import view.*;
  */
 @WebServlet("/MiServlet")
 
-public class Controlador extends HttpServlet {
+public class MiServlet extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
 
@@ -45,7 +45,7 @@ public class Controlador extends HttpServlet {
 		
 		String action = request.getParameter("action");
         String jspPage = "/index.jsp";
-
+System.out.println(jspPage);
         if ((action == null) || (action.length() < 1))
         {
             action = "default";

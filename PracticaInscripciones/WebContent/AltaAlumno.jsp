@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <%@ page import= "controlador.ControladorNegocio"%>
 <%@ page import= "negocio.Alumno"%>    
-<%@ page import= "servlets.Controlador"%>  
+<%@ page import= "servlets.MiServlet"%>  
     
 <!DOCTYPE html>
 <html>
@@ -11,7 +11,7 @@
 		<title>Alta de Alumno</title>
 	</head>
 	<body>
-		<form action="Controlador?action=saveAlumno" method="post">
+		<form action="MiServlet?action=saveAlumno" method="post">
 			<br>Nombre y Apellido:<br>
 			<input id="nombre" type="text" name="nombre">
 			<br><br>
