@@ -4,6 +4,7 @@
 <%@ page import= "negocio.Curso"%>
 <%@ page import= "controlador.ControladorNegocio"%>
 <%@ page import= "view.CursoView"%>
+<%@ include file="index.jsp" %>
 
 <html>
 	<head>

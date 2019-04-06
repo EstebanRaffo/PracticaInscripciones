@@ -45,7 +45,7 @@ public class MiServlet extends HttpServlet {
 		
 		String action = request.getParameter("action");
         String jspPage = "/index.jsp";
-System.out.println(jspPage);
+        System.out.println(jspPage);
         if ((action == null) || (action.length() < 1))
         {
             action = "default";

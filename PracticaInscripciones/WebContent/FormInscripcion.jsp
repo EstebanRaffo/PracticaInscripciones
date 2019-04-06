@@ -6,7 +6,7 @@
 <%@ page import= "java.util.Iterator"%>
 <%@ page import= "java.util.List"%>
 <%@ page import= "controlador.ControladorNegocio" %>
-
+<%@ include file="index.jsp" %>
 
 <!DOCTYPE html>
 <html>
@@ -21,11 +21,11 @@
 	        Alumno unAlumno = ControladorNegocio.getInstancia().buscarAlumno(legajo);
 		%>
 		<form action="MiServlet?action=saveInscription" method="post">
-			<br>Legajo<br> 
-			<input name="legajo" type="text" value=<%=unAlumno.getNombre()%>>
-			<br>Alumno:<br>
-			<input name="nombre" type="text" value=<%=legajo%>>
-			<br>Numero de Curso<br>
+			<br>Alumno:<br> 
+			<input name="nombre" type="text" value=<%=unAlumno.getNombre()%>>
+			<br>Legajo:<br>
+			<input name="legajo" type="text" value=<%=legajo%>>
+			<br>Numero de Curso:<br>
 			<input name="numero" type="text">
 			<br>Seleccione el Curso<br>
 			<select name="cursos">

@@ -5,6 +5,7 @@
 <%@ page import= "view.CursoView"%>
 <%@ page import= "java.util.Iterator"%>
 <%@ page import= "java.util.List"%>
+<%@ include file="index.jsp" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -19,10 +20,11 @@
 	        //request.setAttribute("Cursos", Cursos);
 		
 		%>
+		<br><br>
 		<table cellspacing="3" cellpadding="3" border="1" width="60%">
 			<tr>
 				<td colspan="2"><b>Alumno:</b> 
-			     <%=unAlumno.getNombre()%>,<%=unAlumno.getNombre()%>
+			     <%=unAlumno.getNombre()%>
 				</td>
 			</tr>
 			<tr>
@@ -35,11 +37,12 @@
 			</tr>
 			<tr>
 				<td><b>Cursos</b></td>
+				<td>
 				<% 
 				for(Curso unCurso : cursos){
 				%>
-				<td><%=unCurso.getNumero()%></td>
-				<% } %>
+				<%=unCurso.getNumero() + ","%>
+				<% } %></td>
 			</tr>
 			<tr>
 				<td colspan="2">

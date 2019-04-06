@@ -8,9 +8,10 @@
 		<title>Práctica Web</title>
 	</head>
 	<body>
-		<a href="MiServlet?action=displaylist" target="_self">Lista de Alumnos</a>
-		<a href="MiServlet?action=newAlumno" target="_self">Alta de Alumno</a>
-		<a href="MiServlet?action=displaylistCursos" target="_self">Lista de Cursos</a>
-		<a href="MiServlet?action=newCurso" target="_self">Alta de Curso</a>
+		<b><a href="MiServlet?action=displaylist" target="_self">Lista de Alumnos</a></b>
+		<b><a href="MiServlet?action=newAlumno" target="_self">Alta de Alumno</a></b>
+		<br><br>
+		<b><a href="MiServlet?action=displaylistCursos" target="_self">Lista de Cursos</a></b>
+		<b><a href="MiServlet?action=newCurso" target="_self">Alta de Curso</a></b>
 	</body>
 </html>

@@ -48,16 +48,13 @@
 			</tr>
 			<tr>
 				<td><b>Inscriptos</b></td>
-				<% 
-				for(Alumno unAlumno : alumnos){
-				%>
-				<td><%=unAlumno.getNombre()%></td>
-			</tr>
-			<tr>
-				<td colspan="2">
-				   <a href="MiServlet?action=displayAlumno&legajo=<%=unAlumno.getLegajo()%>">Ver Alumno</a>
+				<td><% 
+					for(Alumno unAlumno : alumnos){
+					%>
+					<a href="MiServlet?action=displayAlumno&legajo=<%=unAlumno.getLegajo()%>">
+					<%=unAlumno.getNombre() + ","%> 
+					<% } %></a>
 				</td>
-				<% } %>
 			</tr>
 
 		</table>
