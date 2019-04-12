@@ -4,51 +4,49 @@
 <%@ page import= "negocio.Alumno"%>    
 <%@ page import= "servlets.MiServlet"%>  
     
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="ISO-8859-1">
-		<title>Alta de Alumno</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<title>Alta de Alumno</title>
 	</head>
 	<body>
-		<form action="MiServlet?action=saveAlumno" method="post">
+<!-- 		<form action="MiServlet?action=saveAlumno" method="post">
 			<br>Nombre y Apellido:<br>
 			<input id="nombre" type="text" name="nombre">
 			<br><br>
 			<input type="submit" value="Guardar">
+		</form> -->
+		
+		<form action="MiServlet?action=saveAlumno" method="post">
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Nombre y Apellido</label>
+			    <input type="text" name="nombre" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter name">
+			    <small id="nameHelp" class="form-text text-muted"></small>
+			  </div>
+			  
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Email address</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+			    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Password</label>
+			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			  </div>
+			  <div class="form-group form-check">
+			    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+			    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+			  </div>
+			  <button type="submit" class="btn btn-primary">Guardar</button>
 		</form>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		
 	</body>
 </html>
 
-<%-- <body>
-		<%
-			Cliente c = (Cliente) request.getAttribute("cliente");
-			String id = c.getId();
-		%>
-		
-			<input type="hidden" name="id" value="<%=id%>">
-			<table cellspacing="3" cellpadding="3" border="1" width="60%">
-				<tr>
-					<td><b>Nombre:</b>
-					<td><input type="text" name="nombre" value="<%=c.getNombre()%>"></td>
-				</tr>
-				<tr>
-					<td><b>Apellido:</b>
-					<td><input type="text" name="apellido" value="<%=c.getApellido()%>"></td>
-				</tr>
-				<tr>
-					<td><b>Direccion:</b>
-					<td><input type="text" size="50" name="direccion" value="<%=c.getDireccion()%>"></td>
-				</tr>
-				<tr>
-					<td colspan="2"><input type="submit" value="editar cliente"></td>
-				</tr>
-				<tr>
-				<td colspan="2">
-				   <a href="Controlador?action=modificarCliente">Editar Cliente</a>
-				</td>
-				
-				</tr>
-			</table>
-		
-</body> --%>

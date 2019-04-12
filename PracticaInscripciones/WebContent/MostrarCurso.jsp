@@ -51,9 +51,8 @@
 				<td><% 
 					for(Alumno unAlumno : alumnos){
 					%>
-					<a href="MiServlet?action=displayAlumno&legajo=<%=unAlumno.getLegajo()%>">
-					<%=unAlumno.getNombre() + ","%> 
-					<% } %></a>
+					<a href="MiServlet?action=displayAlumno&legajo=<%=unAlumno.getLegajo()%>"><%=unAlumno.getNombre() + ","%></a> 
+					<% } %>
 				</td>
 			</tr>
 
