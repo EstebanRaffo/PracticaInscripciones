@@ -4,17 +4,17 @@
 <%@ page import= "negocio.Alumno"%>    
 <%@ page import= "servlets.MiServlet"%>  
     
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<title>Alta de Alumno</title>
+  	<head>
+	    <!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<title>Alta de Alumno</title>
 	</head>
 	<body>
-<!-- 		<form action="MiServlet?action=saveAlumno" method="post">
+	<!-- <form action="MiServlet?action=saveAlumno" method="post">
 			<br>Nombre y Apellido:<br>
 			<input id="nombre" type="text" name="nombre">
 			<br><br>
@@ -22,24 +22,37 @@
 		</form> -->
 		
 		<form action="MiServlet?action=saveAlumno" method="post">
-			  <div class="form-group">
-			    <label for="exampleInputEmail1">Nombre y Apellido</label>
-			    <input type="text" name="nombre" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter name">
-			    <small id="nameHelp" class="form-text text-muted"></small>
+			    
+			  <div class="row">
+			  	<div class="col">
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Nombre y Apellido</label>
+				    <input type="text" name="nombre" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter name">
+				    <small id="nameHelp" class="form-text text-muted"></small>
+				  </div>
+				 </div>
+				 <div class="col">
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				  </div>
+				 </div>
 			  </div>
 			  
-			  <div class="form-group">
-			    <label for="exampleInputEmail1">Email address</label>
-			    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-			    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-			  </div>
-			  <div class="form-group">
-			    <label for="exampleInputPassword1">Password</label>
-			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-			  </div>
-			  <div class="form-group form-check">
-			    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-			    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+			  <div class="row">
+			  	<div class="col">
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				 </div>
+				<div class="col">
+				  <div class="form-group form-check">
+				    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+				    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+				  </div>
+				 </div>
 			  </div>
 			  <button type="submit" class="btn btn-primary">Guardar</button>
 		</form>
